@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>진도군장애인종합복지관 - 업무일지</title>
+<style>
+  :root {
+    --header-bg: #ffffff;
+    --footer-bg: #4a5568;
+    --footer-bg-2: #5a6b7d;
+    --accent: #4a5568;
+    --btn-bg: #5a6b7d;
+    --btn-hover: #3d4b59;
+    --text-dark: #2d3748;
+    --text-light: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    color: var(--text-dark);
+    background: #fff;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 32px;
+    border-bottom: 1px solid #eee;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .logo-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6fa96f, #3f6f4f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.1;
+  }
+  .site-title {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 20px;
+    color: #444;
+  }
+  nav {
+    display: flex;
+    gap: 28px;
+    font-size: 14px;
+    color: #333;
+  }
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    height: 320px;
+    background: linear-gradient(120deg, #274b5e 0%, #3a6d86 45%, #7ea8bd 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 80%, rgba(255,255,255,0.08), transparent 40%),
+      radial-gradient(circle at 80% 20%, rgba(255,255,255,0.06), transparent 40%);
+  }
+  .hero h1 {
+    position: relative;
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+    margin: 0;
+  }
+
+  /* Section title bar */
+  .section-bar {
+    background: var(--footer-bg-2);
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  /* Team buttons */
+  .teams {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 48px 20px 56px;
+  }
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .team-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+  }
+  .team a.btn {
+    display: inline-block;
+    background: var(--btn-bg);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+  .team a.btn:hover {
+    background: var(--btn-hover);
+  }
+  .team a.btn.disabled {
+    background: #b7c0c8;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  /* Footer */
+  footer {
+    background: linear-gradient(120deg, #3a5568 0%, #6f8fa0 100%);
+    color: #fff;
+    padding: 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .footer-info {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  .footer-info strong {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .footer-image {
+    width: 420px;
+    max-width: 100%;
+    height: 170px;
+    border-radius: 4px;
+    background: linear-gradient(160deg, #e8d9b5, #cbb98a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+  }
+
+  @media (max-width: 700px) {
+    header { flex-direction: column; gap: 10px; }
+    nav { gap: 16px; flex-wrap: wrap; justify-content: center; }
+    .hero h1 { font-size: 32px; }
+    .teams { gap: 32px; }
+    footer { flex-direction: column; text-align: center; padding: 32px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">진도군<br>복지관</div>
+    <span class="site-title">직원전용</span>
+  </div>
+  <nav>
+    <a href="#">홈</a>
+    <a href="#">직원공부방</a>
+    <a href="#">직원업무방</a>
+    <a href="#">홍보관리</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>업무일지</h1>
+</section>
+
+<div class="section-bar">팀별 업무일지</div>
+
+<section class="teams">
+  <div class="team">
+    <div class="team-name">운영팀</div>
+    <a class="btn" href="https://docs.google.com/spreadsheets/d/1wN5bwWBZWTGR8c6ZlNcFoFSQQf-U4NPe7MPnVUYyeoY/edit?usp=sharing" target="_blank" rel="noopener noreferrer">일지작성</a>
+  </div>
+  <div class="team">
+    <div class="team-name">사회팀</div>
+    <a class="btn disabled" href="#" target="_blank" rel="noopener noreferrer">일지작성</a>
+  </div>
+  <div class="team">
+    <div class="team-name">옹호팀</div>
+    <a class="btn disabled" href="#" target="_blank" rel="noopener noreferrer">일지작성</a>
+  </div>
+  <div class="team">
+    <div class="team-name">주간팀</div>
+    <a class="btn disabled" href="#" target="_blank" rel="noopener noreferrer">일지작성</a>
+  </div>
+  <div class="team">
+    <div class="team-name">기획팀</div>
+    <a class="btn disabled" href="#" target="_blank" rel="noopener noreferrer">일지작성</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-info">
+    <strong>진도군장애인종합복지관</strong>
+    전남 진도군 진도읍 남산로 50-4<br>
+    Tel. 061)543-8005<br>
+    Fax. 061)543-0328<br>
+    www.jindojb.or.kr
+  </div>
+  <div class="footer-image">복지관 건물 사진</div>
+</footer>
+
+</body>
+</html>
